@@ -1,0 +1,1179 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1497,20357" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.Mail</x:String>
+      <x:String>UiPath.Mail.Outlook.Activities</x:String>
+      <x:String>UiPath.Mail.Activities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1007,20292" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Name="DT_NotFullAccess" />
+      <Variable x:TypeArguments="scg:IEnumerable(x:String)" Name="filePath" />
+      <Variable x:TypeArguments="x:String" Name="item" />
+      <Variable x:TypeArguments="scg:List(x:String)" Default="[new List(of string)]" Name="Li_TorontoDL" />
+      <Variable x:TypeArguments="scg:List(x:String)" Default="[new List(of string)]" Name="Li_DublinDL" />
+      <Variable x:TypeArguments="scg:List(x:String)" Default="[new List(of string)]" Name="Li_CeutaDL" />
+      <Variable x:TypeArguments="scg:List(x:String)" Default="[new List(of string)]" Name="Li_TbilisiDL" />
+      <Variable x:TypeArguments="scg:List(x:String)" Default="[new List(of string)]" Name="Li_IoMDL" />
+      <Variable x:TypeArguments="scg:List(x:String)" Default="[new List(of string)]" Name="Li_MaltaDL" />
+      <Variable x:TypeArguments="scg:List(x:String)" Default="[new List(of string)]" Name="Li_PortoDL" />
+      <Variable x:TypeArguments="scg:List(x:String)" Default="[new List(of string)]" Name="Li_ClujDL" />
+      <Variable x:TypeArguments="scg:List(x:String)" Default="[new List(of string)]" Name="Li_LeedsDL" />
+      <Variable x:TypeArguments="scg:List(x:String)" Default="[new List(of string)]" Name="Li_LondonDL" />
+      <Variable x:TypeArguments="scg:List(x:String)" Default="[new List(of string)]" Name="Li_SheffieldDL" />
+      <Variable x:TypeArguments="scg:List(x:String)" Default="[new List(of string)]" Name="Li_SolihulDL" />
+      <Variable x:TypeArguments="scg:List(x:String)" Default="[new List(of string)]" Name="Li_CommsDCUKI" />
+      <Variable x:TypeArguments="x:String" Default="bernacor@starsgroup.com" Name="Mail_Toronto" />
+      <Variable x:TypeArguments="x:String" Default="javierc@flutter.com" Name="Mail_Ceuta" />
+      <Variable x:TypeArguments="x:String" Default="s.chkhvimiani@adjarabet.com" Name="Mail_Tbilisi" />
+      <Variable x:TypeArguments="x:String" Default="jonh@flutterint.com" Name="Mail_IoM" />
+      <Variable x:TypeArguments="x:String" Default="workspace.dublin@flutter.com" Name="Mail_Dublin" />
+      <Variable x:TypeArguments="x:String" Default="workspace.malta@flutterint.com" Name="Mail_Malta" />
+      <Variable x:TypeArguments="x:String" Default="romania.reception@ppb.com" Name="Mail_Cluj" />
+      <Variable x:TypeArguments="x:String" Default="workspace.leeds@skybettingandgaming.com" Name="Mail_Leeds" />
+      <Variable x:TypeArguments="x:String" Default="workspace.london@flutter.com" Name="Mail_London" />
+      <Variable x:TypeArguments="x:String" Default="facilities@blip.pt" Name="Mail_Porto" />
+      <Variable x:TypeArguments="x:String" Default="Amie.Mitchell2@skybettingandgaming.com" Name="Mail_Sheffield" />
+      <Variable x:TypeArguments="x:String" Default="Workspace.Sofia@ppb.comDT_NotFullAccess" Name="Mail_Sofia" />
+      <Variable x:TypeArguments="x:Boolean" Name="Window_Exists" />
+      <Variable x:TypeArguments="scg:List(x:String)" Default="[new List(of string)]" Name="Li_SofiaDL" />
+      <Variable x:TypeArguments="x:String" Name="variable1" />
+      <Variable x:TypeArguments="x:String" Default="gabriella.kovacs@flutter.com" Name="Mail_Gabriella" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="945,60" sap2010:WorkflowViewState.IdRef="MessageBox_2" Text="[&quot;All files are saved. Will continue with sorting per location and sending to matching mailbox&quot;]" />
+    <ui:ReadRange Range="{x:Null}" AddHeaders="True" DataTable="[DT_NotFullAccess]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="945,88" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="Sheet1" WorkbookPath="[Environment.CurrentDirectory+&quot;\ACT_NotFullAccess.xlsx&quot;]" />
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="945,92" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;File read&quot;]" />
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="945,308" sap2010:WorkflowViewState.IdRef="TryCatch_6">
+      <TryCatch.Try>
+        <ui:Delete ContinueOnError="{x:Null}" sap:VirtualizedContainerService.HintSize="334,80" sap2010:WorkflowViewState.IdRef="Delete_1" Path="[Environment.CurrentDirectory+&quot;\ACT_AccessRights&quot;]" />
+      </TryCatch.Try>
+      <TryCatch.Catches>
+        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="404,21" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ActivityAction x:TypeArguments="s:Exception">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+            </ActivityAction.Argument>
+          </ActivityAction>
+        </Catch>
+      </TryCatch.Catches>
+    </TryCatch>
+    <ui:CreateDirectory ContinueOnError="{x:Null}" DisplayName="Create Folder" sap:VirtualizedContainerService.HintSize="945,80" sap2010:WorkflowViewState.IdRef="CreateDirectory_1" Path="[Environment.CurrentDirectory+&quot;\ACT_AccessRights&quot;]" />
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Application: ACTpro Manage" sap:VirtualizedContainerService.HintSize="945,5473" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" Version="V1" WindowResize="Maximize">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="654,5183" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ClickType="Single" DisplayName="Click Reports" sap:VirtualizedContainerService.HintSize="592,167" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="30, 433, 246, 32" ElementType="Button" FriendlyName="'Validate Users'" FullSelectorArgument="&lt;ctrl automationid='nbReports' /&gt;&lt;ctrl role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl automationid='nbReports' /&gt;&lt;ctrl role='push button' automationid='' check:fulltext='Validate Users&amp;#xD;&amp;#xA;User List&amp;#xD;&amp;#xA;Card Expiry&amp;#xD;&amp;#xA;User Tracking&amp;#xD;&amp;#xA;Audit Trail&amp;#xD;&amp;#xA;Event Analysis&amp;#xD;&amp;#xA;Time and' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAPoAAAAkCAYAAACg2CdiAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALZSURBVHhe7ZwxbxNBEEb5wbS01LS0tNDS0lIgBBJFCgoQFBRIsYyIEhHFEQnRoc9i0Hgyts857158+z7pKbnb2Z0t8nxn65wHx7N5BwDTBtEBGuC/6A9fzwBgYiA6QAMgOkADIDpAA9xZ9G159e08nQcA9Rkk+suvv7qnRycrvJ8tupPLP93i+mb5+6M33CUAjM0g0SV2PK8r+ZfT393jdz+67+dXS5AdYFyKiW7Huqrr6v7kw8+VOgCoRxHRdeuun4au6kqsBYA69BZdt9/2PlwomejPP50tr+geE93P53YeoB69RTe5fTLRM4bMBYDhHIzo84vrfzPzZHPG5OLqpnvx+SwdA6jNQYkuedaNKdnYWCiIDveFSYguoZS3x4uV8zF+TJ8dKDbXEtfQcYwf174MJdbbnmMfRXvwawGUYpKi27EXyUS0YxPdr2mSar4/tnVFXMf25WviOkLx+4l7BijJJETXecWOJVRWq5hYJnoUTfNMSPUUfjwKGsUXUXSkhrHpLboeeJEAnr4PwQyZa5hQWaLUOo6CxvPagxJrNG41iupiTXwxiP2j6MKSrQdQmo2iP/t4uvLgSynUx/fNyIRaJ6vq1qWE6FZvZKIL1fkgPdRio+g14/tmSJIoulCiaKqL5yJjiO6x/tzOQw22iq7n1PV+WujbaqXi+2ZIpkx0k8oLI4myWo+JFmXcJnF8v31X0YVivQBKslV0RY+w6g9S0peK75uxTnSh837MZPQSRUFNdD/Pzpmg2YtI3Ecmeuxl6/iabG2AUvQSvUZ834xNoptYUbgYL5WX2ieKZ0Ja4h4y0YXqfL3180FyqMXBiL5vTLxsDGBq7Cy6vl+efXK+KzG+bw0QHVpiZ9F3fdBlHTFZTUkQHVqiWdEBWmJn0e0T+KHE+L4AsF82im7/GaZ01Mf3BYD9slF0AJgGiA7QAIgO0ACIDtAAt0QnhEwvt0QHgKky7/4C4sDyQyJLgQoAAAAASUVORK5CYII=" InformativeScreenshot="638dab7e32dcd0378d959065309ad4d9.png" ScopeSelectorArgument="&lt;wnd app='actmanage.exe' cls='HwndWrapper*' title='ACTpro Manage' /&gt;" SearchSteps="Selector, FuzzySelector, Image" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ClickType="Single" DisplayName="Click 'User List'" sap:VirtualizedContainerService.HintSize="592,167" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="32, 501, 244, 36" ElementType="RadioButton" FriendlyName="'User List'" FullSelectorArgument="&lt;ctrl automationid='nbReports' /&gt;&lt;ctrl automationid='itmUserList' /&gt;" FuzzySelectorArgument="&lt;ctrl automationid='nbReports' /&gt;&lt;ctrl automationid='itmUserList' role='radio button' check:fulltext='User List' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAPgAAAAoCAYAAADT7zckAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAN0SURBVHhe7Z1BaxNBFMfzifJhvBQ8evXm0dy8COJBPAjtRdCLCB6UIOhFULAk2hbzIZR+ipV/5ZXH9G2y0yQzcfY38CObmTdvs9Df7GR2QicdhUJprvz+c3kFglMoDZYbgq9WKwBoBAQHaBgEB2gYBAdomKqCn7w/6+49O+3uPP5+zaPXy+7r4lcYDwB5VBNcInuxPXefnnafvl2E/QBgOFUEf/XxPBTbozt71BcAhlNF8HRa3sfbz+dhfwAYRhXBI5kjnr/7GfYHgGEgOEDDVBGcKTpAGaoIrjtzJLSHRTaA7akiuHhwsgjFNnhMlsd0Ou2Ojo7CNhgvVQTXBpdIas/9F4tueVZ2w8s6SebzeTeZTLrj4+OwfZ/MZrOrc0dtt0XXWeNaoCzFBX/y5kcodMTDl8swx74Yk+C6VgRvn6KCa9EsErkPTePVTxtjdJyy60W4XMEVqzqP7yPWtSuX6uxVIvt2Y4jg6We3Ph5dg9rSeusD7VFMcE23tQU1ErkPSay+WpRLH5lpEU5Ifl+/DTmCR9Kpr3L4eC+tDQj2fpPYRq7glteEFj5HNFhBmxQTfMj37pR1gqtNg4ZeNe33bbclR3Avc4SEitp9DhNxk2i5gm+KR/DxUExwLZpFEvfx4cvF9Up6JLhmA5JbKF4DiG+/DTmCm0R9IvXl8vUmuL/TRuQKbnn7ciP4eCgmeCrwJtTHvntrKp4KrgHA0C/TFKPYbabsOYL7Oo+1KVfaZqQiWp8+cgU3/DmFyY7g4+GgBZfU9j4V3DM0bhMSZJPgJkmE2iWajtcNFsa+BffYgKNjBB8PCO5YJ9IQyXyMjk32PkoKbueS3Ag+HooJnrvIpj6lBRf6w0/FNDm8EIqReD5OddbXJPIxqViW19r7yBVcr6nseu9zpJ8N2qSY4GLIJhf/fbuG4MJk8ERxaUw6MEQxfpDIFTzCJPWC2/s01tqEv0ZfD21RVHChzSmS2IT0aGVcj760UCZRt4FfogFUENyQxLb6bYJrFVyPxrz02xCdF2BMVBO8Dz32kpySXXfiVNocovwAY+JgBd8FUX6AMYHgAA1z8IJrmh7F9WFbVxEc4D8QXAtxqhuK3/Me5QcYEwcnuP5tUe7PSiOUI8oPMCYOTnAA2B0IDtAwCA7QMAgO0DA3BKdQKO0UBKdQGi7/BL/s/gJCiUBbO0ZvOgAAAABJRU5ErkJggg==" InformativeScreenshot="2b94f324964ad8692b7d840b4611cb15.png" ScopeSelectorArgument="&lt;wnd app='actmanage.exe' cls='HwndWrapper*' title='ACTpro Manage' /&gt;" SearchSteps="Selector, FuzzySelector, Image" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ClickType="Single" DisplayName="Click 'With Access to Door'" sap:VirtualizedContainerService.HintSize="592,167" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="289, 334, 182, 16" ElementType="RadioButton" FriendlyName="'With Access to Door'" FullSelectorArgument="&lt;ctrl name='Simple' role='page tab' /&gt;&lt;ctrl automationid='rbWithAccess' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Simple' role='page tab' /&gt;&lt;ctrl automationid='rbWithAccess' role='radio button' check:fulltext='With Access to Door' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAALoAAAAUCAYAAAA6GCdvAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAARfSURBVGhD7ZrNTlNBFMf7EiSSgGFFQgKWBFgVJamtqQ+gWBaKiDxDIQEWUAxrlbAAopE3AAOBBXGhMagxQSmpb8AOE1wf75yZO/fMZ6GwaOksfmk758yZuef8Z+60t6nKSRUCgZtOEHqgJQhCD7QETqG/e/8BJiZeQCaTgY6ODhgcHISnz8bh9Zu3Vv9AoJExhP79x0949OgxdHbehsXFMmxtbcPxcQVfy+Ul6OnpgVw+D5+/fFX6BQKNjCJ0JvLu7m6YmpqC09NTOD//Z3B29hemp2fgVns7HBx8UoJVTvZgNp2C9Nye2r47D+mUpX19DFKpMVgT/YrrxCZxxKzJBhSjMVPpedix2m8oItcpneKG3b9FUIQ+OvoERW4TuM7CwgLcGxlRgjF25vpNcaGgzWSvFaM2mxCZv/StU+gsRro/Kno/zO5a7A0My+HlF7YAha5fM88h31Roe+sghc7O5Oy44trJddjOzs7t5aVXalBLopmg08WxqJ0m2i1gXCxXEjrvw+4QuJiabDfDfF2r0Bl1bhg3BCn0ycmXeAa3idrF2to6FAoPtaD8yJAklH8ursevwk8pSCJMFDnb/RF6rBFHEYG3YBhbLCr6noALQMYzF6bLps6PXI/FRu9WPhtFGTv2wWsg7b6d2Sn0CLzLkXHjO22MNidjzmTD4ItxvmmOh1Low8N38QunTdAuDg+/QVdXlxEUixUnBZPJC8OTwwWKSZQJSoRu9Bc2pbgkJvdRsfU3BGkUnMeraaPjUlEZAuPj4vX6bHEsiW7TNw5xfS5x+YSONjF/fE/zIvKs1I3GUeeBtYzm4KpBoyGF3h59uaxW/1gF7YOtdBoQ0cUhkkdF5BOjzaaIwldMeQdJ2lTxXkZktW1YcGwTdxw5b4rPpqONY1vUNcVcW+jGgmaQsdQacNz1a3yk0IeGhmB/f98qZhdHR0e4QGhARO4WWtFkEXQxcr9rEToWK+pvEPurY6nUtllja3OV7YqQfDYK91OEbviy/F1e6FSo+F4XKlkIyQImdjKXphX6+PhzWF5etgraxebmJuTzeSNoUix2hqNJ5+3F6IupukuJ9isL3eIrSArn9qnfZscnBrdNG+fadnQ1bsvu6OyJZ29vH/6aYhO1jVwuB6XpGSMoA5Ni2bkwQY7d7spC9wmAFJHPjYinXhs9JlkEKa/DZyNtHP16+Rj0+rGvLtIYaw54TKUP+tG7l/CJ54RzpnHUebjn35hIoTOy2ftQKpWsotZZWVmBvr478Ot3RQkoEYk0koEJ1ISrCT324Ym+uNC9AqCijD6jL44Rj5P4+mxyAQvovHQbnYvPppP4xouDz/0ifWXedWyi1H0dtYoxFluzCp091mf/a2GP/n07++rqKrS1tcH2xx0lWCDQqChCZ7DH+pnMMAwMDOIZnH3hZOJmr+xzNpvFnTyIPNBMGEKPYU88C4UC/k7Oblvs15V8/gGeyZ3HlUCgQXEKPRC4SQShB1qAKvwHq9umTCMjMuAAAAAASUVORK5CYII=" InformativeScreenshot="7f479d425bf78c7713c0de289321ec36.png" ScopeSelectorArgument="&lt;wnd app='actmanage.exe' cls='HwndWrapper*' title='ACTpro Manage' /&gt;" SearchSteps="Selector, FuzzySelector, Image" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ClickType="Single" DisplayName="Click 'combo box cbDoors'" sap:VirtualizedContainerService.HintSize="592,167" sap2010:WorkflowViewState.IdRef="NClick_5" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="289, 353, 182, 24" ElementType="DropDown" FriendlyName="'combo box cbDoors'" FullSelectorArgument="&lt;ctrl name='Simple' role='page tab' /&gt;&lt;ctrl automationid='cbDoors' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Simple' role='page tab' /&gt;&lt;ctrl automationid='cbDoors' role='combo box' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAALoAAAAcCAYAAADWS6UCAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFgSURBVHhe7dhPTsJAGIZxD9JjdNe7qMHrsLPqwoRgjB7Fhe4lVXaGA0is6f/PfKRFBFo6MWZM5/klbwADs3pCBo+eZ5EwNvQROnNi69CBISJ0OIHQ4QRChzXj67B+9vcIHdYQOpxA6HACocMJhA4nEDqcQOhwwmboVVWtHmevL/Lw9Ni6aD5v3dtisTqjOWsTocOa7W/0PM8lTVOZ3N/J+DI02tV0Ih9xLGmW1qf9ROiwZt/VJcsz49i/I8/qU3YROqxpu6ObxN5Erp/pQuiwpuvHqF5BDsXeN3JF6LCmK3SlobfF3kSu9/o+CB3WHApdaejJVuymkStChzV9QldJmqxj18jjT7PIFaHDmr6hK/3feJIk8r5cSlmW9V/7I3RYYxK60tiLoqhfmSF0WGMa+m8QOpxA6HACocMJO6EzNuS1hj69uZXR6EyCIBDP88T3fTk+OZXz8GLv+xn7v4vkC/tFHBOMF/hvAAAAAElFTkSuQmCC" InformativeScreenshot="f9a9bc48a95aac1dca448ad5ec56fe96.png" ScopeSelectorArgument="&lt;wnd app='actmanage.exe' cls='HwndWrapper*' title='ACTpro Manage' /&gt;" SearchSteps="Selector, FuzzySelector, Image" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ClickType="Single" DisplayName="Click first option" sap:VirtualizedContainerService.HintSize="592,167" sap2010:WorkflowViewState.IdRef="NClick_14" KeyModifiers="None" MouseButton="Left">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="3, 0, 368, 28" FriendlyName="'BG_Sofia_Goldline_GF_Gl…'" FullSelectorArgument="&lt;ctrl name='BG_Sofia_Goldline_GF_Glass Door' role='list item' /&gt;" FuzzySelectorArgument="&lt;ctrl name='BG_Sofia_Goldline_GF_Glass Door' role='list item' automationid='' check:text='BG_Sofia_Goldline_GF_Glass Door' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAXQAAAAeCAYAAAA8e+XbAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAArXSURBVHhe7ZzZbx3FEsb5/1954oUX7gNIgJDuFQgQCLHdexFLWAJhSVhCIIuT2LETx4mTw/zGfKZcrp7p2RzOoT7py8mZXqaruqq6umeOn1olEolEYiOQAT2RSCQ2BKcC+tPvXEkmk8nkGtAjA3oymUyuKT0yoCeTyeSa0iMDejKZTK4pPTKgz8Truw9Wjx4f6fD2vYftNbD/8NGpupvCIfKd/+1uW//X2/ePr6En8NaF28fXwCbrbB2Yc7A+9BgV0OWcEQ4fP17tHRyuPri4E7YV3/72duvQDxUFG/C/+40h4fTPfng1bDeGn13ebcfE2ARue+/Bo9WFa/fCNkP4yS+7bZ/bjTzPvPfb8XXwJBwD3V28sd/q0qh3ddh8ubPfPze1BP/UgP7c/6+1sjw4fNzarYA939x7uHrzm79kspTMfVBSMIX//vJmm2gwRgu+/75zsHr53FbYDqxLQC/pE7tXLGGuorabQI9JAT0yulfP31zt3j9sy6nnywl4BD7A5xtf3zoue/7j662hYX44xjvfbZ9oO4a37h7di0/GpusvfXbjuGyq81y+db/txwarJ8WPfrrTGjP6Y7GSMaP3//14pzVycKNxdN92KMHcAX0d+P31e62NHjSykywo+eDzq0ZOJSk/bu2faiuZI9+Yk/gRIGl59/vt40QDe2CxZ4iM8tzlvVNtwboFdK9P5GQusHfkZM5s+abQY/aADv/10bW2PDIKTUBX8Hvvh522Do5BX1GdGr7/Zz93D8rGqcUlMuxaIgt40gGdBRDjRW8vfHI9rGMXVBaiqE4twT8toEuO/SZQ2t2YJYEdvYAvr5y0q7MI6LLHkn9CsnN2rNiL1z9Y94BuqTqXmoUsKl9neiwS0CHAWOw1BViOP+z1iGSQZBdknFF5DaMg4vn+xZ02m/nw0sljCJyS7SrHFAKB8uebJ/uKIL0A7xgEWt8v/6ffUoCo5c7+0c6II6CoXPxPsxXnnlt7p7N0HJ3x2+Mpspxvrp52GODle+38rXZ+1VqyRXMhR+s6ctHuh/aMgaxY4P+RfXgZ+HeqLYkHfx6xoMOoXGQOWtndoimZuwLQFJIAMT5stc+e2EGgwwtXT2avYIrd8p151k4FMBfI7o953v1hu7UXU7W1t9qj0Bp9Mh7Nm08Qh9g7/Pjn3daWVJtxM37s3tbTosq40DP1l1gkPRYJ6Bg7IMDY6wRpcFbbn/82QRqQkUblJWK8GCNku8o1jIKtKvBya/L8wgHsJNKH+uUZgq5hvIAjINUdylc+32r74Hw0Kq+hMnyyTx1PsbBdu3M0b33yWb1JPra+yIVDAduHnLEroMvWGBP2pCMkzoe5D71aJ6WvaAxa7KYEUj0r4TlEVF7DmgA0hQQPwJxF5TUEU+wW/QD8hXpcw4/Uh67JP5lb5pNrzJXsLTqy8qzVJwsPsH0OtXf5OeXWDmlPP/aIWHZLsqhF8/Nfx58ClOgxe0Bn4hCAifNZDEYCznKLrQnnXJ8zZCYsqmephSfK6Lb2jvqzZZrovoB3/ve77Yp+ZfvgRD0oJyAw+7Iads1JLck0QHRcw7EVRmvHB6x8Orf91mVXOPDUgE57BQIRPQKbTSlw++cvtCULg76fWpbmeQhrA9BYztE/GGu3Xcet2AX90B/fFTijsTLfZML+umetvFo87OIzxN6JZXwnjvi6SmBtmbXbqP+56DEpoJfAisVRhm935NKr0Q41ljwcsVt1Fhuy9k+bjCsK8HJ8fx0qS7MZUG1A72IU3IZQRxOR09VQGT5GHpUr87O7K2Dlk4NEzz2irGdIQLf6FgnkQH1KhtIzE42h70iqRD1EL23HayiZ+zB20cD3gF/QhhCMtVsFdPzHH694aj5IBKLyGtYGdMYHqM/3ofau76Vdg7d92a3utxQ9Zs/Q2YqwvdFqZoM3kwwihy8tErWGVUPGRpaOAekcDFrn6cowoDcMSHvgnRD4fnidjbb+VTJhbECXwUWBDzKOCHIEZTAlA9T8WBmBlU/zq++WGp9tz71ATUD3uo3K+mTAOcHYh8F9R4YlWPkks/Q+NxVY0IUvk+1GsPXAFLtlPgA1GQ/xwL5hJuqIDnAezxl9KckqsVafkl22MdTetfiU7qNxSA++/VL0WOyhqM6s7Oo7NHsA3rDmJIYjJ5WTa+JL9/WGAWXAfvKA7Yc3HjBfdgssLDqHg94ghpK+Qe3zAo1ZBto3p5GBAiufoO+WUftIZmD7jNqVyvS9D1FfNRy6C4rk0zXGauvOxaG7CHQN7DUw1W55eEgwt+Gf4O3HhQ8SI+zDVkC/NUcVtfqUf+DvfJet0N7XteWylb77eD349kvRY7GAjmDAGoZWudK2xRPY9kuQHQTgyTbfl8zQlT1Fb0h4gxhKu9WNyj01Zhno0hm6gqFtH8kMbJ9djuHL+mSYSvXPPEblnpF8uia9z03tQhS4+oiugb0G5rRbnqsRtBWyS0deLBQEXnwR1Oi5Vp8+w84M3VCDLSkDIhiwhqFr0QOuiMC2H0ruQ5DpuxewgZBtZSkwaqW3RxtMGvCTB+z4BVtH1Fa2yzH6KKMqHQlYaswyUC0IJSdSQLZ9AyufdmDRkZocwurIOwEEts8ux/BlkmHKWyh9ZGyAgBCVW0by6Zr0PjfRAbaLNdVkuJLHXgNL2K3my78VE1Hjet388DBijT6lE/uGzVB710JZSka97XfZ7Zz0WPzIhXMxe12BxAbEiKpX86S7RB2ndClVD9Z4e0XXyCZA9GMjveXCO/W6prH6+wDrGDJ+v8DIWMCUh1k6k4T+vVhLHlbp7PKceZVKb4hEmZie+stgIbDylfSGvCyuwOpo7oAOkYE7RTIwd9jTi5/eOFVWS+aH/nHgroDJj+NQMXVtUFo6oEPpBV10JTPYPuNjnPY6GGu3l5qAR/CM3hDTCwXaPWAT0VsjULsCvWVSYp8+GXPpldUh9s4n36MH7rQH9KdrkW0uQY/ZAzpnYryfivAEjcjo5fg4l/9ZMg9FtOVisoc8IPGkX+4B+Psa9sEMf2YAZUfjtIFR790yDr2HTl+qC+kH+MkDUcDjDJax0SdtuI8yWBzC9jGUBHL6Qy4WVeRUGX9mQVvfpsrqi2a3YdvilFwnWEXvBfsfyQArH3qTPv074GcV0OmL+3Pea+eOOsDP3RgSrNAT9/F/XgF75h6AcgK7bXsWAR0SbNE4evB/noBzcHwL4Gv+bRQw1m4JfFyH6EJ94HvYFWPSfCsLpg/pkL7lZzWZfEmf9NP30/+h9m7HK31KLvqxdtxlt3PSY1JALwElEkwUqCPy1BzDZ+ItyAYwoNIfNxpDJpbAbm/F/7lmf/xgyYS1v4xrsg0BuaJfsClY+MkD1jG4DzJrHHxikDgUwVBBDwOx/Qwl90EuLzOykPnwI4fS3OiXc2rHB/3wkMvXBVY+yIKiRRTwsAu9RAa+RECHkqFm7sZSQU0BQ0BejnxITKJ2pQC0BNEDvqQMW8DnsMPSH2kDU+z2WP9q0IC54JrfOTInXod8x35tvRKlzwjIifyMJ2oLNVYNlY+SvUP9UlSQXP4eXXY7Jz1GBfRkMplMPnl6ZEBPJpPJNaVHBvRkMplcU3qsTUAfirM4o1yKnLsNgT/HTvaz6+w1AvWjfpYk8zoES5/XJv9+9MgMPZlMJteUHqcCeiKRSCTWExnQE4lEYkOQAT2RSCQ2BBnQE4lEYiOwWv0Bk1bLz3X2hfEAAAAASUVORK5CYII=" InformativeScreenshot="14c484bebddeaf564f3f7187ec23e044.png" ScopeSelectorArgument="&lt;wnd app='actmanage.exe' cls='HwndWrapper*' idx='*' /&gt;" SearchSteps="Selector, FuzzySelector, Image" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ClickType="Single" DisplayName="Click 'Generate'" sap:VirtualizedContainerService.HintSize="592,167" sap2010:WorkflowViewState.IdRef="NClick_6" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="283, 950, 85, 28" ElementType="Button" FriendlyName="'Generate'" FullSelectorArgument="&lt;ctrl name='Simple' role='page tab' /&gt;&lt;ctrl name='Generate' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Simple' role='page tab' /&gt;&lt;ctrl name='Generate' role='push button' automationid='' check:text='Generate' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFkAAAAgCAYAAAB5JtSmAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMKSURBVGhD7Zpbb9owFMdpS/dF+4Fa6GM/xjZt7UaBhDvr1I1Cx0Pf+lIJFHFRI3E78zFxbCd2CEkUbZL/0u+hudjHv5wYpFKw7Cb0+w/w+GsAg6cRPA2fYTj6A6PnsSEjjOQc8CW7rgvr9Rq22y3sdjswSR+l5LNyE07LbThBrjuGFBjJOWAk54CRnANGcg4YyTlgJOeAkZwDqSVfvK7pIHLWUK2or/8/eIMxLsN5U5w7HkxCyV4hUcmoyNwZupnWj0kk+cah95KEu5Z3tws3wvHwg5HvZfdNX1/4QmmC4xCk8yTuDC788y9QpadxfDYnG4OdEyLcy9fFItYYXb8OTALJfLLxMHhOQ2UGU+8eOVygL9lxw9cKItRbFInfeVzy2BEfuEIwi3evVnKM+nVgjpfsd9HhCRiseNql3jGpc4W/Mezh8WOsa9gDFrtI7Fzxb8yBGn15/DpftLBdxKlfBya5ZOkVFY4L2RcQ0UEYbxxfqDiuL+FQR+0TnC8sIPjKs0RJjle/PA8Hc7xkxdOnZCVZ+sAJdO6RkuXtTCcY869JPrgnBztJt2iZ4yRHbQOa+VTbnGK8KMlR9evAJJAsFEISmljoNva6+tdHPPVYkoUHHN4KGPEl83Ww8VWS49WvA5NIcvSrx6LqGEW8xcSTLFynyF6qRrKyhjVMmXtvjuD4dIwY9evAJJS8R71gLkQm/GDEbowrmRLa/8XzEa+3dN++Cfga2BhynXyM6Pp1YFJJNhzGSM4BSXLdakCv9wPe39/hrNSA01ILThAm25AI/I8//rQCkSQXyw3SzS3SzYTrtiEFkuRa3YZutw/L5RKKJZt0M9kyECbbkIjNZkN/KIQUqjUL2u0uzOdzOL+yoHhFuhkhog3JWa1W8HswpBQq9zVoNtvgOA58uKzB+WUdiggVbkgKfpHAn74hhbtvFbDIvjyZTKjo2WxGu3qxWBhS8vDzkVL48vUWqtU62I0WtMi20e70oEP26C75MDRkQ+Hjp89we/cd7onoumWDZTfAJt+dUbohC1rwF8sL8fwQFcb9AAAAAElFTkSuQmCC" InformativeScreenshot="2026044e1fc5216060e136ccd65ea93f.png" ScopeSelectorArgument="&lt;wnd app='actmanage.exe' cls='HwndWrapper*' title='ACTpro Manage' /&gt;" SearchSteps="Selector, FuzzySelector, Image" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ClickType="Single" DisplayName="Click 'Export'" sap:VirtualizedContainerService.HintSize="592,167" sap2010:WorkflowViewState.IdRef="NClick_7" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="1843, 217, 71, 35" ElementType="Button" FriendlyName="'Export'" FullSelectorArgument="&lt;ctrl name='Export' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Export' role='push button' automationid='' check:text='Export' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEsAAAAnCAYAAABHeLXLAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGDSURBVGhD7ZMxTgNBFEPhrByJkrMg2lyAgoKOhgKhVCkogoxkyVgzsGYJSYQtPYXszJ+d//K5uLze7MsyKiugsgIqK6CyAioroLICKiugsgIqK6CyAioroLICKivgR7K+y8vubVh3bHCvNXf7N7Kubh9X322VrJv75+E64OUQ3efPAYIm+DeDvXom8Nw9bT+tP7zuPp7jLJyJ8JlG77SUg8kC2jyfsQE26YI8rFPJHsjgPopRQSchaxa9CC8KOQDRfwWVxbrRVPKcWS2nUMXoZI7enXJwWaP92gQb9iZUMr4zWgt8UlmHT913dFkuZYZOAJvyNW+CzbFpxmW5VP9OzkaWR9fSyfJ3zibrLGXx8vgcXZiyEJ6H6WH4jOfMajlxJyvrq2CfNsNanwTdMwrrVKAHgrhvJsvf4+tLOJis0a/u9bgw90GiN6Q1Xst40zNZgD8U8meyfhOVNVo/JSoroLICKivg6LLOicoKqKyAygqorIDKCqisgMoKqKyAylrMZv8Obe3HCEaTiWMAAAAASUVORK5CYII=" InformativeScreenshot="a53b356b534c85551042b641f88a9da0.png" ScopeSelectorArgument="&lt;wnd app='actmanage.exe' cls='HwndWrapper*' title='ACTpro Manage' /&gt;" SearchSteps="Selector, FuzzySelector, Image" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ClickType="Single" DisplayName="Click 'Yes'" sap:VirtualizedContainerService.HintSize="592,167" sap2010:WorkflowViewState.IdRef="NClick_8" KeyModifiers="None" MouseButton="Left">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="96, 69, 70, 28" ElementType="Button" FriendlyName="'Yes'" FullSelectorArgument="&lt;ctrl automationid='btnYes' /&gt;" FuzzySelectorArgument="&lt;ctrl automationid='btnYes' role='push button' check:text='Yes' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEoAAAAgCAYAAAC1v+5NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFKSURBVGhD7ZaxDoIwFEX1W/0kR7/FuPoDDg5sLA7GMDEwPDW0ePsoLzWhTTX3JHdpAcPJ7ZONkCQoKhGKSiQQtd2fGQhCUUYQijKCUJQRhKKMIBRlBKEoIwhFGUEyimrk1LsH953s9P6xk7vbvl7UXiVBMjfqJlf37HvbJKzXFST/0bv4Wg1yOo5rh4dbUk2b1h0zidBCT842IkVm1K4dxh94i4mIC46pYhIRkeTJJQspNMznIoK2eHnYMC/Gr/lrHrf5fbi2YpBCol7BRqgXmxoXxTVvauJIidmGlBMFrdJHJUnU4nV4hNcNUpeob44QNiz2+bFCkCpEfV56uR3+HzG4V8+xlYPUISoy7D/0cnhfo2ZUwF8Nc1PUGP0dNWtKRFbOoY4UFPV7QSjKCEJRRhCKMoJQlBGEoowgFGUECUSRZSgqEYpKQuQJTpB/uywjChoAAAAASUVORK5CYII=" InformativeScreenshot="27ece9fa93d6d95f162d45316bac5820.png" ScopeSelectorArgument="&lt;wnd app='actmanage.exe' cls='HwndWrapper*' title='WpfMessageBox' /&gt;" SearchSteps="Selector, FuzzySelector, Image" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NKeyboardShortcuts DelayBetweenShortcuts="{x:Null}" ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="592,149" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_1" Shortcuts="[d(hk)][k(f4)][u(hk)][d(hk)][d(ctrl)]a[u(ctrl)][u(hk)][d(hk)][d(ctrl)]a[u(ctrl)][u(hk)]" />
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="592,188" sap2010:WorkflowViewState.IdRef="NTypeInto_1" Text="[Environment.CurrentDirectory+&quot;\ACT_AccessRights[k(enter)]&quot;]" />
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'User List.csv'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="592,227" sap2010:WorkflowViewState.IdRef="NTypeInto_2" Text="BG_Sofia_Goldline_GF_Facility Ro">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="136, 569, 1033, 17" ElementType="InputBox" FriendlyName="'User List.csv'" FullSelectorArgument="&lt;wnd aaname='Explorer Pane' cls='DirectUIHWND' /&gt;&lt;wnd aaname='File name:' cls='ComboBox' /&gt;&lt;wnd ctrlid='1001' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='Explorer Pane' cls='DirectUIHWND' /&gt;&lt;wnd aaname='File name:' cls='ComboBox' /&gt;&lt;wnd ctrlid='1001' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAABA0AAAAVCAYAAAAttxcIAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHbSURBVHhe7dxhbqwgFAZQ1+WCWI+rmc3MYngiOgXnYl+nbdJkzklMCyLYn/cTOmUAAACAgNAAAAAACAkNAAAAgJDQAAAAAAgJDQAAAIDQIDS45TTNebnvzU3U912DOe9Lnn98LQAAAOAr/mZo8KnfeBcAAACgJTQAAAAAQi+GBve8zFOepnql2zZgP1Zw9Kf1iaI+l9Lc9B1Gxf/VWuXeR3t6LN6K3u/cV9vd47eUp3lZRwIAAACvhQaluH4q1k/PrGPmOngr8uvvZ9E6xRfX6tQw4Gm9aJ5T3y2dQgQAAAB4Y6+FBvuOgq4w73YZ7NdWgV8V+KN7n6x1Nec2/ryjYTWcp9kRYZcBAAAAPAxCg/K1/lSUB8X4fSlHDvav86NifSvMvxEa7Lq1ruYcvkfVz1PbJUg4fgIAAADVIDRYy/I0def7t3awd/+j2C6FfHQM4WdCg6Jfq73ftgfHExpdQFBChjnltF6joAEAAADe0TA0OIrvx1GDdut++V8AR3/7VX8/AvC491/HE5rx6/UUCgzW2kKM0heu0c9bhwze+fg7g0AEAAAA3tlFaAAAAAC8M6EBAAAAEBIaAAAAACGhAQAAABASGgAAAAAhoQEAAAAQEhoAAAAAgZz/AWZra+GiArPYAAAAAElFTkSuQmCC" InformativeScreenshot="38f82a0f4ad72fbde2624ff923871a31.png" ScopeSelectorArgument="&lt;wnd app='actmanage.exe' cls='#32770' title='User List' /&gt;" SearchSteps="Selector, FuzzySelector, Image" />
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NClick ClickType="Single" DisplayName="Click Save" sap:VirtualizedContainerService.HintSize="592,167" sap2010:WorkflowViewState.IdRef="NClick_9" KeyModifiers="None" MouseButton="Left">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="989, 634, 88, 26" ElementType="Button" FriendlyName="'unchecked'" FullSelectorArgument="&lt;wnd ctrlid='1' title='&amp;amp;Save' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='1' title='&amp;amp;Save' check:text='unchecked' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFwAAAAeCAYAAAChf3k/AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFKSURBVGhD7ZbBkcMgDEXpiW6oZG+0QitUsWd34A60kg2JFLMzO5NEgdl/eBPLyJeH+CTs+07ADwh3BsKdMcLD1zd4A8axKQbN4HmMY1O0hm3bwAuAcGcg3BkIdwbCnZlfeEkUQmgkKqOehZhbeM0UtWSuc1HrCzK3cJnumKmO1hZlbuFbocRREnO9rJXUY4ZJhd9VyjFQ0idAb9hxWj4fTZMLF06RIsrIvCGbEilXfhbBh/xzTTbl/Eb1yBr3jTbRgwWEN9qE3qSby7TLFLF9evl5ON0NtTGerCOcqTmeosxlKifgPr3SI9Pbf49vTf9nmVt44X8lPQZatBwSL9ms4kLqmHi6teDf7wJv5hbeRF1j4J7r4ZCrhPe1x8h4jBVEyv8Awp2BcGcg3BkIdwbCnfmzcPBajGNTDJrB8xjHugDvB8KdgXBXdvoBtsHYGrTo71oAAAAASUVORK5CYII=" InformativeScreenshot="1843ea1ba6914d5aee39c5a6a72fb19f.png" ScopeSelectorArgument="&lt;wnd app='actmanage.exe' cls='#32770' title='User List' /&gt;" SearchSteps="Selector, FuzzySelector, Image" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="592,25" sap2010:WorkflowViewState.IdRef="Delay_1" />
+            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[DT_NotFullAccess]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="592,2439" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+              <ui:ForEachRow.Body>
+                <ActivityAction x:TypeArguments="sd:DataRow">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="sd:DataRow" Name="row" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="558,2317" sap2010:WorkflowViewState.IdRef="Sequence_62">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <Assign sap:VirtualizedContainerService.HintSize="496,82" sap2010:WorkflowViewState.IdRef="Assign_3">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:String">[item]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:String">[row(0).ToString]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <ui:SelectItem AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Select Item 'combo box  cbDoors'" sap:VirtualizedContainerService.HintSize="496,135" sap2010:WorkflowViewState.IdRef="SelectItem_1" Item="[item]">
+                      <ui:SelectItem.Items>
+                        <scg:List x:TypeArguments="x:String" Capacity="50">
+                          <x:String>BG_Sofia_Goldline_GF_Back Door</x:String>
+                          <x:String>BG_Sofia_Goldline_GF_Facility Ro</x:String>
+                          <x:String>BG_Sofia_Goldline_GF_Glass Door</x:String>
+                          <x:String>BG_Sofia_Goldline_GF_Rear East S</x:String>
+                          <x:String>BG_Sofia_Goldline_GF_Rear West S</x:String>
+                          <x:String>BG_Sofia_Goldline_GF_Stairway D</x:String>
+                          <x:String>BG_Sofia_Goldline_GF_Wooden Door</x:String>
+                          <x:String>BG_Sofia_Goldline_L-1_Electric D</x:String>
+                          <x:String>BG_Sofia_Goldline_L-1_Elevators</x:String>
+                          <x:String>BG_Sofia_Goldline_L1_Floor Ent</x:String>
+                          <x:String>BG_Sofia_Goldline_L-1_Garage D</x:String>
+                          <x:String xml:space="preserve">BG_Sofia_Goldline_L-1_Generator </x:String>
+                          <x:String>BG_Sofia_Goldline_L1_Stairway</x:String>
+                          <x:String>BG_Sofia_Goldline_L-1_Stairway</x:String>
+                          <x:String>BG_Sofia_Goldline_L-1_Walk-in G</x:String>
+                          <x:String>BG_Sofia_Goldline_L-2_Battery R</x:String>
+                          <x:String>BG_Sofia_Goldline_L-2_Elevators</x:String>
+                          <x:String>BG_Sofia_Goldline_L2_Floor Ent</x:String>
+                          <x:String>BG_Sofia_Goldline_L-2_Garage</x:String>
+                          <x:String>BG_Sofia_Goldline_L-2_IT Storage</x:String>
+                          <x:String>BG_Sofia_Goldline_L-2_Server R</x:String>
+                          <x:String>BG_Sofia_Goldline_L-2_Shower R</x:String>
+                          <x:String>BG_Sofia_Goldline_L2_Stairway</x:String>
+                          <x:String xml:space="preserve">BG_Sofia_Goldline_L-2_Stairway </x:String>
+                          <x:String>BG_Sofia_Goldline_L-2_Walk-in G</x:String>
+                          <x:String>BG_Sofia_Goldline_L-2_WorkS S2</x:String>
+                          <x:String>BG_Sofia_Goldline_L-2_WorkspaceS</x:String>
+                          <x:String>BG_Sofia_Goldline_L3_Floor Ent</x:String>
+                          <x:String>BG_Sofia_Goldline_L3_Stairway</x:String>
+                          <x:String>BG_Sofia_Goldline_L4_Floor Ent</x:String>
+                          <x:String>BG_Sofia_Goldline_L4_Stairway</x:String>
+                          <x:String>BG_Sofia_Goldline_L5_Floor Ent</x:String>
+                          <x:String>BG_Sofia_Goldline_L5_Stairway</x:String>
+                          <x:String>BG_Sofia_Goldline_L6_Floor Ent</x:String>
+                          <x:String>BG_Sofia_Goldline_L6_Stairway</x:String>
+                          <x:String>BG_Sofia_Goldline_L7_Floor Ent</x:String>
+                          <x:String xml:space="preserve">BG_Sofia_Goldline_L7_Stairway </x:String>
+                          <x:String>BG_Sofia_Goldline_L7_Terrance D</x:String>
+                          <x:String>CA_Toronto_WR_3FL_ElevLobbyNorth</x:String>
+                          <x:String>CA_Toronto_WR_3FL_ElevLobbySouth</x:String>
+                          <x:String>CA_Toronto_WR_3FL_ReceptionEast</x:String>
+                          <x:String>CA_Toronto_WR_3FL_ReceptionWest</x:String>
+                          <x:String>CA_Toronto_WR_3FL_StaircaseCA</x:String>
+                          <x:String>CA_Toronto_WR_3FL_StaircaseCB</x:String>
+                          <x:String>CA_Toronto_WR_3FL_TerraceDoorCen</x:String>
+                          <x:String>CA_Toronto_WR_4FL_CommsRoom</x:String>
+                          <x:String>CA_Toronto_WR_4FL_ElevLobbyNorth</x:String>
+                          <x:String>CA_Toronto_WR_4FL_ElevLobbySouth</x:String>
+                          <x:String>CA_Toronto_WR_4FL_IT_StoreRoom</x:String>
+                          <x:String>CA_Toronto_WR_4FL_LanRoom</x:String>
+                        </scg:List>
+                      </ui:SelectItem.Items>
+                      <ui:SelectItem.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="7f01527f-e9d8-46b3-abb2-1fb8e6ea63d4" InformativeScreenshot="a96ae134f86caa07b4cd29b9c6451d4f" Selector="&lt;ctrl name='Simple' role='page tab' /&gt;&lt;ctrl automationid='cbDoors' /&gt;">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                          <ui:Target.WaitForReady>
+                            <InArgument x:TypeArguments="ui:WaitForReady" />
+                          </ui:Target.WaitForReady>
+                        </ui:Target>
+                      </ui:SelectItem.Target>
+                    </ui:SelectItem>
+                    <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into" sap:VirtualizedContainerService.HintSize="496,97" sap2010:WorkflowViewState.IdRef="TypeInto_1" Text="%[k(enter)]">
+                      <ui:TypeInto.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="4a034633-3d58-4984-97a8-e81b69973cc1">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                          <ui:Target.WaitForReady>
+                            <InArgument x:TypeArguments="ui:WaitForReady" />
+                          </ui:Target.WaitForReady>
+                        </ui:Target>
+                      </ui:TypeInto.Target>
+                    </ui:TypeInto>
+                    <uix:NClick ClickType="Single" DisplayName="Click 'Export'" sap:VirtualizedContainerService.HintSize="496,167" sap2010:WorkflowViewState.IdRef="NClick_11" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable DesignTimeRectangle="1843, 217, 71, 35" ElementType="Button" FriendlyName="'Export'" FullSelectorArgument="&lt;ctrl name='Export' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Export' role='push button' automationid='' check:text='Export' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEsAAAAnCAYAAABHeLXLAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGDSURBVGhD7ZMxTgNBFEPhrByJkrMg2lyAgoKOhgKhVCkogoxkyVgzsGYJSYQtPYXszJ+d//K5uLze7MsyKiugsgIqK6CyAioroLICKiugsgIqK6CyAioroLICKivgR7K+y8vubVh3bHCvNXf7N7Kubh9X322VrJv75+E64OUQ3efPAYIm+DeDvXom8Nw9bT+tP7zuPp7jLJyJ8JlG77SUg8kC2jyfsQE26YI8rFPJHsjgPopRQSchaxa9CC8KOQDRfwWVxbrRVPKcWS2nUMXoZI7enXJwWaP92gQb9iZUMr4zWgt8UlmHT913dFkuZYZOAJvyNW+CzbFpxmW5VP9OzkaWR9fSyfJ3zibrLGXx8vgcXZiyEJ6H6WH4jOfMajlxJyvrq2CfNsNanwTdMwrrVKAHgrhvJsvf4+tLOJis0a/u9bgw90GiN6Q1Xst40zNZgD8U8meyfhOVNVo/JSoroLICKivg6LLOicoKqKyAygqorIDKCqisgMoKqKyAylrMZv8Obe3HCEaTiWMAAAAASUVORK5CYII=" InformativeScreenshot="a53b356b534c85551042b641f88a9da0.png" ScopeSelectorArgument="&lt;wnd app='actmanage.exe' cls='HwndWrapper*' title='ACTpro Manage' /&gt;" SearchSteps="Selector, FuzzySelector, Image" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <uix:NClick ClickType="Single" DisplayName="Click 'Yes'" sap:VirtualizedContainerService.HintSize="496,167" sap2010:WorkflowViewState.IdRef="NClick_12" KeyModifiers="None" MouseButton="Left">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable DesignTimeRectangle="96, 69, 70, 28" ElementType="Button" FriendlyName="'Yes'" FullSelectorArgument="&lt;ctrl automationid='btnYes' /&gt;" FuzzySelectorArgument="&lt;ctrl automationid='btnYes' role='push button' check:text='Yes' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEoAAAAgCAYAAAC1v+5NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFKSURBVGhD7ZaxDoIwFEX1W/0kR7/FuPoDDg5sLA7GMDEwPDW0ePsoLzWhTTX3JHdpAcPJ7ZONkCQoKhGKSiQQtd2fGQhCUUYQijKCUJQRhKKMIBRlBKEoIwhFGUEyimrk1LsH953s9P6xk7vbvl7UXiVBMjfqJlf37HvbJKzXFST/0bv4Wg1yOo5rh4dbUk2b1h0zidBCT842IkVm1K4dxh94i4mIC46pYhIRkeTJJQspNMznIoK2eHnYMC/Gr/lrHrf5fbi2YpBCol7BRqgXmxoXxTVvauJIidmGlBMFrdJHJUnU4nV4hNcNUpeob44QNiz2+bFCkCpEfV56uR3+HzG4V8+xlYPUISoy7D/0cnhfo2ZUwF8Nc1PUGP0dNWtKRFbOoY4UFPV7QSjKCEJRRhCKMoJQlBGEoowgFGUECUSRZSgqEYpKQuQJTpB/uywjChoAAAAASUVORK5CYII=" InformativeScreenshot="27ece9fa93d6d95f162d45316bac5820.png" ScopeSelectorArgument="&lt;wnd app='actmanage.exe' cls='HwndWrapper*' title='WpfMessageBox' /&gt;" SearchSteps="Selector, FuzzySelector, Image" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'User List.csv'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="496,227" sap2010:WorkflowViewState.IdRef="NTypeInto_3" Text="[item]">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable DesignTimeRectangle="136, 569, 1033, 17" ElementType="InputBox" FriendlyName="'User List.csv'" FullSelectorArgument="&lt;wnd aaname='Explorer Pane' cls='DirectUIHWND' /&gt;&lt;wnd aaname='File name:' cls='ComboBox' /&gt;&lt;wnd ctrlid='1001' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='Explorer Pane' cls='DirectUIHWND' /&gt;&lt;wnd aaname='File name:' cls='ComboBox' /&gt;&lt;wnd ctrlid='1001' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAABA0AAAAVCAYAAAAttxcIAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHbSURBVHhe7dxhbqwgFAZQ1+WCWI+rmc3MYngiOgXnYl+nbdJkzklMCyLYn/cTOmUAAACAgNAAAAAACAkNAAAAgJDQAAAAAAgJDQAAAIDQIDS45TTNebnvzU3U912DOe9Lnn98LQAAAOAr/mZo8KnfeBcAAACgJTQAAAAAQi+GBve8zFOepnql2zZgP1Zw9Kf1iaI+l9Lc9B1Gxf/VWuXeR3t6LN6K3u/cV9vd47eUp3lZRwIAAACvhQaluH4q1k/PrGPmOngr8uvvZ9E6xRfX6tQw4Gm9aJ5T3y2dQgQAAAB4Y6+FBvuOgq4w73YZ7NdWgV8V+KN7n6x1Nec2/ryjYTWcp9kRYZcBAAAAPAxCg/K1/lSUB8X4fSlHDvav86NifSvMvxEa7Lq1ruYcvkfVz1PbJUg4fgIAAADVIDRYy/I0def7t3awd/+j2C6FfHQM4WdCg6Jfq73ftgfHExpdQFBChjnltF6joAEAAADe0TA0OIrvx1GDdut++V8AR3/7VX8/AvC491/HE5rx6/UUCgzW2kKM0heu0c9bhwze+fg7g0AEAAAA3tlFaAAAAAC8M6EBAAAAEBIaAAAAACGhAQAAABASGgAAAAAhoQEAAAAQEhoAAAAAgZz/AWZra+GiArPYAAAAAElFTkSuQmCC" InformativeScreenshot="38f82a0f4ad72fbde2624ff923871a31.png" ScopeSelectorArgument="&lt;wnd app='actmanage.exe' cls='#32770' title='User List' /&gt;" SearchSteps="Selector, FuzzySelector, Image" />
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <uix:NClick ClickType="Single" DisplayName="Click Save" sap:VirtualizedContainerService.HintSize="496,167" sap2010:WorkflowViewState.IdRef="NClick_13" KeyModifiers="None" MouseButton="Left">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable DesignTimeRectangle="989, 634, 88, 26" ElementType="Button" FriendlyName="'unchecked'" FullSelectorArgument="&lt;wnd ctrlid='1' title='&amp;amp;Save' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='1' title='&amp;amp;Save' check:text='unchecked' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFwAAAAeCAYAAAChf3k/AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFKSURBVGhD7ZbBkcMgDEXpiW6oZG+0QitUsWd34A60kg2JFLMzO5NEgdl/eBPLyJeH+CTs+07ADwh3BsKdMcLD1zd4A8axKQbN4HmMY1O0hm3bwAuAcGcg3BkIdwbCnZlfeEkUQmgkKqOehZhbeM0UtWSuc1HrCzK3cJnumKmO1hZlbuFbocRREnO9rJXUY4ZJhd9VyjFQ0idAb9hxWj4fTZMLF06RIsrIvCGbEilXfhbBh/xzTTbl/Eb1yBr3jTbRgwWEN9qE3qSby7TLFLF9evl5ON0NtTGerCOcqTmeosxlKifgPr3SI9Pbf49vTf9nmVt44X8lPQZatBwSL9ms4kLqmHi6teDf7wJv5hbeRF1j4J7r4ZCrhPe1x8h4jBVEyv8Awp2BcGcg3BkIdwbCnfmzcPBajGNTDJrB8xjHugDvB8KdgXBXdvoBtsHYGrTo71oAAAAASUVORK5CYII=" InformativeScreenshot="1843ea1ba6914d5aee39c5a6a72fb19f.png" ScopeSelectorArgument="&lt;wnd app='actmanage.exe' cls='#32770' title='User List' /&gt;" SearchSteps="Selector, FuzzySelector, Image" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="496,815" sap2010:WorkflowViewState.IdRef="TryCatch_5">
+                      <TryCatch.Try>
+                        <ui:RetryScope DisplayName="Retry Scope" sap:VirtualizedContainerService.HintSize="458,587" sap2010:WorkflowViewState.IdRef="RetryScope_1" NumberOfRetries="5" RetryInterval="00:00:02">
+                          <ui:RetryScope.ActivityBody>
+                            <ActivityAction>
+                              <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="416,339" sap2010:WorkflowViewState.IdRef="Sequence_63">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <ui:UiElementExists DisplayName="Element exists : Export to .CSV" Exists="[Window_Exists]" sap:VirtualizedContainerService.HintSize="354,107" sap2010:WorkflowViewState.IdRef="UiElementExists_1">
+                                  <ui:UiElementExists.Target>
+                                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="06896c2a-5d50-45e7-b8de-6df1353c7ad2" InformativeScreenshot="d6d6761dde35f5c3afe4bb06bbcae209">
+                                      <ui:Target.TimeoutMS>
+                                        <InArgument x:TypeArguments="x:Int32" />
+                                      </ui:Target.TimeoutMS>
+                                      <ui:Target.WaitForReady>
+                                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                                      </ui:Target.WaitForReady>
+                                    </ui:Target>
+                                  </ui:UiElementExists.Target>
+                                </ui:UiElementExists>
+                                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="354,92" sap2010:WorkflowViewState.IdRef="LogMessage_32" Level="Info" Message="[&quot;Still exporting .CSV&quot; + Window_Exists.ToString]" />
+                              </Sequence>
+                            </ActivityAction>
+                          </ui:RetryScope.ActivityBody>
+                          <ui:RetryScope.Condition>
+                            <ActivityFunc x:TypeArguments="x:Boolean">
+                              <ui:CheckFalse DisplayName="Check False" ErrorMessage="Does not exist" Expression="[Window_Exists]" sap:VirtualizedContainerService.HintSize="334,88" sap2010:WorkflowViewState.IdRef="CheckFalse_1" />
+                            </ActivityFunc>
+                          </ui:RetryScope.Condition>
+                        </ui:RetryScope>
+                      </TryCatch.Try>
+                      <TryCatch.Catches>
+                        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="462,21" sap2010:WorkflowViewState.IdRef="Catch`1_6">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ActivityAction x:TypeArguments="s:Exception">
+                            <ActivityAction.Argument>
+                              <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                            </ActivityAction.Argument>
+                          </ActivityAction>
+                        </Catch>
+                      </TryCatch.Catches>
+                    </TryCatch>
+                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="496,92" sap2010:WorkflowViewState.IdRef="LogMessage_33" Level="Info" Message="[&quot;File saved&quot; + item.ToString]" />
+                  </Sequence>
+                </ActivityAction>
+              </ui:ForEachRow.Body>
+            </ui:ForEachRow>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="592,92" sap2010:WorkflowViewState.IdRef="LogMessage_34" Level="Info" Message="[&quot;All files saved&quot;]" />
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1936, 1056" FilePath="C:\ProgramData\Access Control Technology\ACT Enterprise\Publish\Clients\ACTManage\actmanage.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGhSURBVFhH7ZdNSgQxFITbI3gDj+ARPIJH6Jt4A8GdK925EjduBhfu3TgIoiAMuhBEQVRkZASh7a/JGyr9N89FWsEpKOhOKqnql5AmGVjZOc9LjkpOSxaJiQdeuZrPSraJUxLPnACkiTpXdy+KrbOH4mX2VRh4po2+ut64fnBdaYy8t+mEIwJEZcdg/PQRbJugrx6C96PJa1DEoL0vNAGihr2r5zC0G9vjx2jM6f176GkHIVSvbATwgOUw/ebxJLT2Y+PwJvIxRgFYMy9sDNXwgD2hXsYoAGvlhY1ZVH6DKwC8ffsMQ7rBRjQ9E3vgDuBZUzSmX9u/DK39QKc+xkYAhH1VoK8+2aIq5Cd3kV7Z2IR6+HQBjR0yhOk7NwD9CyvgNTegZSm8YzS0ch5AvwIxZU1BNYdVANbIYOZ1YSpWAfQcV3NveX8K5rWNWQVQWICUlWBe5ue5MwCwASlo8/+NALoJNQDPqQjmATQEnRYgNaIAUP/ZQwCfKIByCOCzDLAM8O8DTAnQuJpBPR1TIPwNq6vZ715O5YY81PUchut5ln0DN4S5x0wEBZIAAAAASUVORK5CYII=" InformativeScreenshot="6f0b5eca70cd7ecca174a1fec6eb906c.png" Selector="&lt;wnd app='actmanage.exe' cls='HwndWrapper*' title='ACTpro Manage'/&gt;" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="945,310" sap2010:WorkflowViewState.IdRef="TryCatch_4">
+      <TryCatch.Try>
+        <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_2">
+          <Assign.To>
+            <OutArgument x:TypeArguments="scg:IEnumerable(x:String)">[filePath]</OutArgument>
+          </Assign.To>
+          <Assign.Value>
+            <InArgument x:TypeArguments="scg:IEnumerable(x:String)">[directory.GetFiles(Environment.CurrentDirectory+"\Access_Rights")]</InArgument>
+          </Assign.Value>
+        </Assign>
+      </TryCatch.Try>
+      <TryCatch.Catches>
+        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="438,21" sap2010:WorkflowViewState.IdRef="Catch`1_5">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ActivityAction x:TypeArguments="s:Exception">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+            </ActivityAction.Argument>
+          </ActivityAction>
+        </Catch>
+      </TryCatch.Catches>
+    </TryCatch>
+    <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="945,5522" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[filePath]">
+      <ui:ForEach.Body>
+        <ActivityAction x:TypeArguments="x:String">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:String" Name="item" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="546,5386" sap2010:WorkflowViewState.IdRef="Sequence_7">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <If Condition="[item.Contains(&quot;Sofia&quot;)]" sap:VirtualizedContainerService.HintSize="484,322" sap2010:WorkflowViewState.IdRef="If_1">
+              <If.Then>
+                <Sequence sap:VirtualizedContainerService.HintSize="416,133" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <AddToCollection x:TypeArguments="x:String" Collection="[Li_SofiaDL]" DisplayName="Add To Collection" sap:VirtualizedContainerService.HintSize="354,25" sap2010:WorkflowViewState.IdRef="AddToCollection`1_1" Item="[item]" />
+                </Sequence>
+              </If.Then>
+              <If.Else>
+                <Sequence sap2010:WorkflowViewState.IdRef="Sequence_6">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </Sequence>
+              </If.Else>
+            </If>
+            <If Condition="[item.Contains(&quot;Toronto&quot;)]" sap:VirtualizedContainerService.HintSize="484,322" sap2010:WorkflowViewState.IdRef="If_2">
+              <If.Then>
+                <Sequence sap:VirtualizedContainerService.HintSize="416,133" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                  <Sequence.Variables>
+                    <Variable x:TypeArguments="scg:List(x:String)" Name="Li_SofiaDL" />
+                    <Variable x:TypeArguments="x:String" Name="variable1" />
+                  </Sequence.Variables>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <AddToCollection x:TypeArguments="x:String" Collection="[Li_TorontoDL]" DisplayName="Add To Collection" sap:VirtualizedContainerService.HintSize="354,25" sap2010:WorkflowViewState.IdRef="AddToCollection`1_2" Item="[item]" />
+                </Sequence>
+              </If.Then>
+              <If.Else>
+                <Sequence sap2010:WorkflowViewState.IdRef="Sequence_10">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </Sequence>
+              </If.Else>
+            </If>
+            <If Condition="[item.Contains(&quot;CEU_&quot;)]" sap:VirtualizedContainerService.HintSize="484,322" sap2010:WorkflowViewState.IdRef="If_3">
+              <If.Then>
+                <Sequence sap:VirtualizedContainerService.HintSize="416,133" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                  <Sequence.Variables>
+                    <Variable x:TypeArguments="scg:List(x:String)" Name="Li_SofiaDL" />
+                    <Variable x:TypeArguments="x:String" Name="variable1" />
+                  </Sequence.Variables>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <AddToCollection x:TypeArguments="x:String" Collection="[Li_CeutaDL]" DisplayName="Add To Collection" sap:VirtualizedContainerService.HintSize="354,25" sap2010:WorkflowViewState.IdRef="AddToCollection`1_3" Item="[item]" />
+                </Sequence>
+              </If.Then>
+              <If.Else>
+                <Sequence sap2010:WorkflowViewState.IdRef="Sequence_11">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </Sequence>
+              </If.Else>
+            </If>
+            <If Condition="[item.Contains(&quot;TBI&quot;)]" sap:VirtualizedContainerService.HintSize="484,322" sap2010:WorkflowViewState.IdRef="If_4">
+              <If.Then>
+                <Sequence sap:VirtualizedContainerService.HintSize="416,133" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                  <Sequence.Variables>
+                    <Variable x:TypeArguments="scg:List(x:String)" Name="Li_SofiaDL" />
+                    <Variable x:TypeArguments="x:String" Name="variable1" />
+                  </Sequence.Variables>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <AddToCollection x:TypeArguments="x:String" Collection="[Li_TbilisiDL]" DisplayName="Add To Collection" sap:VirtualizedContainerService.HintSize="354,25" sap2010:WorkflowViewState.IdRef="AddToCollection`1_4" Item="[item]" />
+                </Sequence>
+              </If.Then>
+              <If.Else>
+                <Sequence sap2010:WorkflowViewState.IdRef="Sequence_13">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </Sequence>
+              </If.Else>
+            </If>
+            <If Condition="[item.Contains(&quot;KEB&quot;)]" sap:VirtualizedContainerService.HintSize="484,322" sap2010:WorkflowViewState.IdRef="If_5">
+              <If.Then>
+                <Sequence sap:VirtualizedContainerService.HintSize="416,133" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                  <Sequence.Variables>
+                    <Variable x:TypeArguments="scg:List(x:String)" Name="Li_SofiaDL" />
+                    <Variable x:TypeArguments="x:String" Name="variable1" />
+                  </Sequence.Variables>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <AddToCollection x:TypeArguments="x:String" Collection="[Li_IoMDL]" DisplayName="Add To Collection" sap:VirtualizedContainerService.HintSize="354,25" sap2010:WorkflowViewState.IdRef="AddToCollection`1_5" Item="[item]" />
+                </Sequence>
+              </If.Then>
+              <If.Else>
+                <Sequence sap2010:WorkflowViewState.IdRef="Sequence_15">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </Sequence>
+              </If.Else>
+            </If>
+            <If Condition="[item.Contains(&quot;IRE&quot;) Or item.Contains(&quot;Door 10 - 1&quot;)]" sap:VirtualizedContainerService.HintSize="484,322" sap2010:WorkflowViewState.IdRef="If_6">
+              <If.Then>
+                <Sequence sap:VirtualizedContainerService.HintSize="416,133" sap2010:WorkflowViewState.IdRef="Sequence_16">
+                  <Sequence.Variables>
+                    <Variable x:TypeArguments="scg:List(x:String)" Name="Li_SofiaDL" />
+                    <Variable x:TypeArguments="x:String" Name="variable1" />
+                  </Sequence.Variables>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <AddToCollection x:TypeArguments="x:String" Collection="[Li_DublinDL]" DisplayName="Add To Collection" sap:VirtualizedContainerService.HintSize="354,25" sap2010:WorkflowViewState.IdRef="AddToCollection`1_6" Item="[item]" />
+                </Sequence>
+              </If.Then>
+              <If.Else>
+                <Sequence sap2010:WorkflowViewState.IdRef="Sequence_17">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </Sequence>
+              </If.Else>
+            </If>
+            <If Condition="[item.Contains(&quot;MT&quot;)]" sap:VirtualizedContainerService.HintSize="484,322" sap2010:WorkflowViewState.IdRef="If_7">
+              <If.Then>
+                <Sequence sap:VirtualizedContainerService.HintSize="416,133" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                  <Sequence.Variables>
+                    <Variable x:TypeArguments="scg:List(x:String)" Name="Li_SofiaDL" />
+                    <Variable x:TypeArguments="x:String" Name="variable1" />
+                  </Sequence.Variables>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <AddToCollection x:TypeArguments="x:String" Collection="[Li_MaltaDL]" DisplayName="Add To Collection" sap:VirtualizedContainerService.HintSize="354,25" sap2010:WorkflowViewState.IdRef="AddToCollection`1_7" Item="[item]" />
+                </Sequence>
+              </If.Then>
+              <If.Else>
+                <Sequence sap2010:WorkflowViewState.IdRef="Sequence_19">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </Sequence>
+              </If.Else>
+            </If>
+            <If Condition="[item.Contains(&quot;Porto&quot;)]" sap:VirtualizedContainerService.HintSize="484,322" sap2010:WorkflowViewState.IdRef="If_8">
+              <If.Then>
+                <Sequence sap:VirtualizedContainerService.HintSize="416,133" sap2010:WorkflowViewState.IdRef="Sequence_20">
+                  <Sequence.Variables>
+                    <Variable x:TypeArguments="scg:List(x:String)" Name="Li_SofiaDL" />
+                    <Variable x:TypeArguments="x:String" Name="variable1" />
+                  </Sequence.Variables>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <AddToCollection x:TypeArguments="x:String" Collection="[Li_PortoDL]" DisplayName="Add To Collection" sap:VirtualizedContainerService.HintSize="354,25" sap2010:WorkflowViewState.IdRef="AddToCollection`1_8" Item="[item]" />
+                </Sequence>
+              </If.Then>
+              <If.Else>
+                <Sequence sap2010:WorkflowViewState.IdRef="Sequence_25">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </Sequence>
+              </If.Else>
+            </If>
+            <If Condition="[item.Contains(&quot;Cluj&quot;)]" sap:VirtualizedContainerService.HintSize="484,322" sap2010:WorkflowViewState.IdRef="If_9">
+              <If.Then>
+                <Sequence sap:VirtualizedContainerService.HintSize="416,133" sap2010:WorkflowViewState.IdRef="Sequence_21">
+                  <Sequence.Variables>
+                    <Variable x:TypeArguments="scg:List(x:String)" Name="Li_SofiaDL" />
+                    <Variable x:TypeArguments="x:String" Name="variable1" />
+                  </Sequence.Variables>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <AddToCollection x:TypeArguments="x:String" Collection="[Li_ClujDL]" DisplayName="Add To Collection" sap:VirtualizedContainerService.HintSize="354,25" sap2010:WorkflowViewState.IdRef="AddToCollection`1_9" Item="[item]" />
+                </Sequence>
+              </If.Then>
+              <If.Else>
+                <Sequence sap2010:WorkflowViewState.IdRef="Sequence_26">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </Sequence>
+              </If.Else>
+            </If>
+            <If Condition="[item.Contains(&quot;Cluj&quot;)]" sap:VirtualizedContainerService.HintSize="484,322" sap2010:WorkflowViewState.IdRef="If_10">
+              <If.Then>
+                <Sequence sap:VirtualizedContainerService.HintSize="416,133" sap2010:WorkflowViewState.IdRef="Sequence_22">
+                  <Sequence.Variables>
+                    <Variable x:TypeArguments="scg:List(x:String)" Name="Li_SofiaDL" />
+                    <Variable x:TypeArguments="x:String" Name="variable1" />
+                  </Sequence.Variables>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <AddToCollection x:TypeArguments="x:String" Collection="[Li_ClujDL]" DisplayName="Add To Collection" sap:VirtualizedContainerService.HintSize="354,25" sap2010:WorkflowViewState.IdRef="AddToCollection`1_10" Item="[item]" />
+                </Sequence>
+              </If.Then>
+              <If.Else>
+                <Sequence sap2010:WorkflowViewState.IdRef="Sequence_27">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </Sequence>
+              </If.Else>
+            </If>
+            <If Condition="[item.Contains(&quot;Leeds&quot;)]" sap:VirtualizedContainerService.HintSize="484,322" sap2010:WorkflowViewState.IdRef="If_11">
+              <If.Then>
+                <Sequence sap:VirtualizedContainerService.HintSize="416,133" sap2010:WorkflowViewState.IdRef="Sequence_23">
+                  <Sequence.Variables>
+                    <Variable x:TypeArguments="scg:List(x:String)" Name="Li_SofiaDL" />
+                    <Variable x:TypeArguments="x:String" Name="variable1" />
+                  </Sequence.Variables>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <AddToCollection x:TypeArguments="x:String" Collection="[Li_LeedsDL]" DisplayName="Add To Collection" sap:VirtualizedContainerService.HintSize="354,25" sap2010:WorkflowViewState.IdRef="AddToCollection`1_11" Item="[item]" />
+                </Sequence>
+              </If.Then>
+              <If.Else>
+                <Sequence sap2010:WorkflowViewState.IdRef="Sequence_28">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </Sequence>
+              </If.Else>
+            </If>
+            <If Condition="[item.Contains(&quot;London&quot;)]" sap:VirtualizedContainerService.HintSize="484,322" sap2010:WorkflowViewState.IdRef="If_12">
+              <If.Then>
+                <Sequence sap:VirtualizedContainerService.HintSize="416,133" sap2010:WorkflowViewState.IdRef="Sequence_24">
+                  <Sequence.Variables>
+                    <Variable x:TypeArguments="scg:List(x:String)" Name="Li_SofiaDL" />
+                    <Variable x:TypeArguments="x:String" Name="variable1" />
+                  </Sequence.Variables>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <AddToCollection x:TypeArguments="x:String" Collection="[Li_LondonDL]" DisplayName="Add To Collection" sap:VirtualizedContainerService.HintSize="354,25" sap2010:WorkflowViewState.IdRef="AddToCollection`1_12" Item="[item]" />
+                </Sequence>
+              </If.Then>
+              <If.Else>
+                <Sequence sap2010:WorkflowViewState.IdRef="Sequence_29">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </Sequence>
+              </If.Else>
+            </If>
+            <If Condition="[item.Contains(&quot;SHEF&quot;)]" sap:VirtualizedContainerService.HintSize="484,322" sap2010:WorkflowViewState.IdRef="If_13">
+              <If.Then>
+                <Sequence sap:VirtualizedContainerService.HintSize="416,133" sap2010:WorkflowViewState.IdRef="Sequence_30">
+                  <Sequence.Variables>
+                    <Variable x:TypeArguments="scg:List(x:String)" Name="Li_SofiaDL" />
+                    <Variable x:TypeArguments="x:String" Name="variable1" />
+                  </Sequence.Variables>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <AddToCollection x:TypeArguments="x:String" Collection="[Li_SheffieldDL]" DisplayName="Add To Collection" sap:VirtualizedContainerService.HintSize="354,25" sap2010:WorkflowViewState.IdRef="AddToCollection`1_13" Item="[item]" />
+                </Sequence>
+              </If.Then>
+              <If.Else>
+                <Sequence sap2010:WorkflowViewState.IdRef="Sequence_31">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </Sequence>
+              </If.Else>
+            </If>
+            <If Condition="[item.Contains(&quot;SOL&quot;)]" sap:VirtualizedContainerService.HintSize="484,322" sap2010:WorkflowViewState.IdRef="If_14">
+              <If.Then>
+                <Sequence sap:VirtualizedContainerService.HintSize="416,133" sap2010:WorkflowViewState.IdRef="Sequence_32">
+                  <Sequence.Variables>
+                    <Variable x:TypeArguments="scg:List(x:String)" Name="Li_SofiaDL" />
+                    <Variable x:TypeArguments="x:String" Name="variable1" />
+                  </Sequence.Variables>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <AddToCollection x:TypeArguments="x:String" Collection="[Li_SolihulDL]" DisplayName="Add To Collection" sap:VirtualizedContainerService.HintSize="354,25" sap2010:WorkflowViewState.IdRef="AddToCollection`1_14" Item="[item]" />
+                </Sequence>
+              </If.Then>
+              <If.Else>
+                <Sequence sap2010:WorkflowViewState.IdRef="Sequence_33">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </Sequence>
+              </If.Else>
+            </If>
+            <If Condition="[item.Contains(&quot;CLO&quot;) Or item.Contains(&quot;IRE&quot;) Or item.Contains(&quot;UK&quot;) Or item.Contains(&quot;Porto&quot;) Or item.Contains(&quot;Cluj&quot;) Or item.Contains(&quot;Julians&quot;)]" sap:VirtualizedContainerService.HintSize="484,322" sap2010:WorkflowViewState.IdRef="If_15">
+              <If.Then>
+                <Sequence sap:VirtualizedContainerService.HintSize="416,133" sap2010:WorkflowViewState.IdRef="Sequence_34">
+                  <Sequence.Variables>
+                    <Variable x:TypeArguments="scg:List(x:String)" Name="Li_SofiaDL" />
+                    <Variable x:TypeArguments="x:String" Name="variable1" />
+                  </Sequence.Variables>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <AddToCollection x:TypeArguments="x:String" Collection="[Li_CommsDCUKI]" DisplayName="Add To Collection" sap:VirtualizedContainerService.HintSize="354,25" sap2010:WorkflowViewState.IdRef="AddToCollection`1_15" Item="[item]" />
+                </Sequence>
+              </If.Then>
+              <If.Else>
+                <Sequence sap2010:WorkflowViewState.IdRef="Sequence_35">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </Sequence>
+              </If.Else>
+            </If>
+          </Sequence>
+        </ActivityAction>
+      </ui:ForEach.Body>
+    </ui:ForEach>
+    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="945,60" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;All files exported, I will sort and send the emails now. Please confirm&quot;]" />
+    <If Condition="[Li_SofiaDL.Count&gt;0]" sap:VirtualizedContainerService.HintSize="945,538" sap2010:WorkflowViewState.IdRef="If_16">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <If.Then>
+        <Sequence sap:VirtualizedContainerService.HintSize="416,378" sap2010:WorkflowViewState.IdRef="Sequence_36">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:SendOutlookMail Bcc="{x:Null}" MailMessage="{x:Null}" ReplyTo="{x:Null}" TimeoutMS="{x:Null}" Account="cre@flutter.com" AttachmentsCollection="[Li_SofiaDL]" Body="Please see attached the users that have access to extra rights doors." Cc="gabrielam@flutterint.com" DisplayName="Send Outlook Mail Message" sap:VirtualizedContainerService.HintSize="354,146" sap2010:WorkflowViewState.IdRef="SendOutlookMail_1" Importance="Normal" IsBodyHtml="False" IsDraft="False" Sensitivity="Normal" Subject="Sofia Extra Rights Door List" To="[Mail_Sofia]">
+            <ui:SendOutlookMail.Files>
+              <scg:List x:TypeArguments="InArgument(x:String)" Capacity="0" />
+            </ui:SendOutlookMail.Files>
+          </ui:SendOutlookMail>
+          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="354,92" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info" Message="[&quot;Mail sent to Sofia&quot;]" />
+        </Sequence>
+      </If.Then>
+      <If.Else>
+        <Sequence sap:VirtualizedContainerService.HintSize="416,200" sap2010:WorkflowViewState.IdRef="Sequence_37">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="354,92" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Info" Message="[&quot;No files to be sent to Sofia&quot;]" />
+        </Sequence>
+      </If.Else>
+    </If>
+    <If Condition="[Li_TorontoDL.Count&gt;0]" sap:VirtualizedContainerService.HintSize="945,542" sap2010:WorkflowViewState.IdRef="If_17">
+      <If.Then>
+        <Sequence sap:VirtualizedContainerService.HintSize="416,382" sap2010:WorkflowViewState.IdRef="Sequence_38">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:SendOutlookMail Bcc="{x:Null}" MailMessage="{x:Null}" ReplyTo="{x:Null}" TimeoutMS="{x:Null}" Account="cre@flutter.com" AttachmentsCollection="[Li_TorontoDL]" Body="Please see attached the users that have access to extra rights doors." Cc="act.toronto@ppb.com" DisplayName="Send Outlook Mail Message" sap:VirtualizedContainerService.HintSize="354,146" sap2010:WorkflowViewState.IdRef="SendOutlookMail_2" Importance="Normal" IsBodyHtml="False" IsDraft="False" Sensitivity="Normal" Subject="Toronto Extra Rights Door List" To="[Mail_Toronto]">
+            <ui:SendOutlookMail.Files>
+              <scg:List x:TypeArguments="InArgument(x:String)" Capacity="0" />
+            </ui:SendOutlookMail.Files>
+          </ui:SendOutlookMail>
+          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="354,96" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Info" Message="[&quot;Mail sent to Toronto&quot;]" />
+        </Sequence>
+      </If.Then>
+      <If.Else>
+        <Sequence sap:VirtualizedContainerService.HintSize="416,200" sap2010:WorkflowViewState.IdRef="Sequence_39">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="354,92" sap2010:WorkflowViewState.IdRef="LogMessage_8" Level="Info" Message="[&quot;No files to be sent to Toronto&quot;]" />
+        </Sequence>
+      </If.Else>
+    </If>
+    <If Condition="[Li_CeutaDL.Count&gt;0]" sap:VirtualizedContainerService.HintSize="945.333333333333,559.333333333333" sap2010:WorkflowViewState.IdRef="If_18">
+      <If.Then>
+        <Sequence sap:VirtualizedContainerService.HintSize="416,394" sap2010:WorkflowViewState.IdRef="Sequence_40">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:SendOutlookMail Bcc="{x:Null}" MailMessage="{x:Null}" ReplyTo="{x:Null}" TimeoutMS="{x:Null}" Account="cre@flutter.com" AttachmentsCollection="[Li_CeutaDL]" Body="Please see attached the users that have access to extra rights doors." Cc="diogo.cruz@flutter.com" DisplayName="Send Outlook Mail Message" sap:VirtualizedContainerService.HintSize="354,150.666666666667" sap2010:WorkflowViewState.IdRef="SendOutlookMail_3" Importance="Normal" IsBodyHtml="False" IsDraft="False" Sensitivity="Normal" Subject="Ceuta Extra Rights Door List" To="[Mail_Ceuta]">
+            <ui:SendOutlookMail.Files>
+              <scg:List x:TypeArguments="InArgument(x:String)" Capacity="0" />
+            </ui:SendOutlookMail.Files>
+          </ui:SendOutlookMail>
+          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="354,96" sap2010:WorkflowViewState.IdRef="LogMessage_9" Level="Info" Message="[&quot;Mail sent to Ceuta&quot;]" />
+        </Sequence>
+      </If.Then>
+      <If.Else>
+        <Sequence sap:VirtualizedContainerService.HintSize="416,203.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_41">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="354,96" sap2010:WorkflowViewState.IdRef="LogMessage_10" Level="Info" Message="[&quot;No files to be sent to Ceuta&quot;]" />
+        </Sequence>
+      </If.Else>
+    </If>
+    <If Condition="[Li_TbilisiDL.Count&gt;0]" sap:VirtualizedContainerService.HintSize="945.333333333333,559.333333333333" sap2010:WorkflowViewState.IdRef="If_19">
+      <If.Then>
+        <Sequence sap:VirtualizedContainerService.HintSize="416,394" sap2010:WorkflowViewState.IdRef="Sequence_42">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:SendOutlookMail Bcc="{x:Null}" Cc="{x:Null}" MailMessage="{x:Null}" ReplyTo="{x:Null}" TimeoutMS="{x:Null}" Account="cre@flutter.com" AttachmentsCollection="[Li_TbilisiDL]" Body="Please see attached the users that have access to extra rights doors." DisplayName="Send Outlook Mail Message" sap:VirtualizedContainerService.HintSize="354,150.666666666667" sap2010:WorkflowViewState.IdRef="SendOutlookMail_4" Importance="Normal" IsBodyHtml="False" IsDraft="False" Sensitivity="Normal" Subject="Tbilisi Extra Rights Door List" To="[Mail_Tbilisi]">
+            <ui:SendOutlookMail.Files>
+              <scg:List x:TypeArguments="InArgument(x:String)" Capacity="0" />
+            </ui:SendOutlookMail.Files>
+          </ui:SendOutlookMail>
+          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="354,96" sap2010:WorkflowViewState.IdRef="LogMessage_11" Level="Info" Message="[&quot;Mail sent to Tbilisi&quot;]" />
+        </Sequence>
+      </If.Then>
+      <If.Else>
+        <Sequence sap:VirtualizedContainerService.HintSize="416,203.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_43">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="354,96" sap2010:WorkflowViewState.IdRef="LogMessage_12" Level="Info" Message="[&quot;No files to be sent to Tbilisi&quot;]" />
+        </Sequence>
+      </If.Else>
+    </If>
+    <If Condition="[Li_IoMDL.Count&gt;0]" sap:VirtualizedContainerService.HintSize="945.333333333333,559.333333333333" sap2010:WorkflowViewState.IdRef="If_20">
+      <If.Then>
+        <Sequence sap:VirtualizedContainerService.HintSize="416,394" sap2010:WorkflowViewState.IdRef="Sequence_44">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:SendOutlookMail Bcc="{x:Null}" Cc="{x:Null}" MailMessage="{x:Null}" ReplyTo="{x:Null}" TimeoutMS="{x:Null}" Account="cre@flutter.com" AttachmentsCollection="[Li_IomDL]" Body="Please see attached the users that have access to extra rights doors." DisplayName="Send Outlook Mail Message" sap:VirtualizedContainerService.HintSize="354,150.666666666667" sap2010:WorkflowViewState.IdRef="SendOutlookMail_5" Importance="Normal" IsBodyHtml="False" IsDraft="False" Sensitivity="Normal" Subject="IoM Extra Rights Door List" To="[Mail_IoM]">
+            <ui:SendOutlookMail.Files>
+              <scg:List x:TypeArguments="InArgument(x:String)" Capacity="0" />
+            </ui:SendOutlookMail.Files>
+          </ui:SendOutlookMail>
+          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="354,96" sap2010:WorkflowViewState.IdRef="LogMessage_13" Level="Info" Message="[&quot;Mail sent to IoM&quot;]" />
+        </Sequence>
+      </If.Then>
+      <If.Else>
+        <Sequence sap:VirtualizedContainerService.HintSize="416,203.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_45">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="354,96" sap2010:WorkflowViewState.IdRef="LogMessage_14" Level="Info" Message="[&quot;No files to be sent to IoM&quot;]" />
+        </Sequence>
+      </If.Else>
+    </If>
+    <If Condition="[Li_DublinDL.Count&gt;0]" sap:VirtualizedContainerService.HintSize="945.333333333333,559.333333333333" sap2010:WorkflowViewState.IdRef="If_21">
+      <If.Then>
+        <Sequence sap:VirtualizedContainerService.HintSize="416,394" sap2010:WorkflowViewState.IdRef="Sequence_46">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:SendOutlookMail Bcc="{x:Null}" MailMessage="{x:Null}" ReplyTo="{x:Null}" TimeoutMS="{x:Null}" Account="cre@flutter.com" AttachmentsCollection="[Li_DublinDL]" Body="Please see attached the users that have access to extra rights doors." Cc="nik.cooper@flutter.com" DisplayName="Send Outlook Mail Message" sap:VirtualizedContainerService.HintSize="354,150.666666666667" sap2010:WorkflowViewState.IdRef="SendOutlookMail_6" Importance="Normal" IsBodyHtml="False" IsDraft="False" Sensitivity="Normal" Subject="Dublin Extra Rights Door List" To="[Mail_Dublin]">
+            <ui:SendOutlookMail.Files>
+              <scg:List x:TypeArguments="InArgument(x:String)" Capacity="0" />
+            </ui:SendOutlookMail.Files>
+          </ui:SendOutlookMail>
+          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="354,96" sap2010:WorkflowViewState.IdRef="LogMessage_15" Level="Info" Message="[&quot;Mail sent to Dublin&quot;]" />
+        </Sequence>
+      </If.Then>
+      <If.Else>
+        <Sequence sap:VirtualizedContainerService.HintSize="416,203.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_47">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="354,96" sap2010:WorkflowViewState.IdRef="LogMessage_16" Level="Info" Message="[&quot;No files to be sent to Dublin&quot;]" />
+        </Sequence>
+      </If.Else>
+    </If>
+    <If Condition="[Li_MaltaDL.Count&gt;0]" sap:VirtualizedContainerService.HintSize="945.333333333333,559.333333333333" sap2010:WorkflowViewState.IdRef="If_22">
+      <If.Then>
+        <Sequence sap:VirtualizedContainerService.HintSize="416,394" sap2010:WorkflowViewState.IdRef="Sequence_48">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:SendOutlookMail Bcc="{x:Null}" MailMessage="{x:Null}" ReplyTo="{x:Null}" TimeoutMS="{x:Null}" Account="cre@flutter.com" AttachmentsCollection="[Li_MaltaDL]" Body="Please see attached the users that have access to extra rights doors." Cc="thais.gatt@flutter.com" DisplayName="Send Outlook Mail Message" sap:VirtualizedContainerService.HintSize="354,150.666666666667" sap2010:WorkflowViewState.IdRef="SendOutlookMail_7" Importance="Normal" IsBodyHtml="False" IsDraft="False" Sensitivity="Normal" Subject="Malta Extra Rights Door List" To="Mail_Malta;Mail_Gabriella">
+            <ui:SendOutlookMail.Files>
+              <scg:List x:TypeArguments="InArgument(x:String)" Capacity="0" />
+            </ui:SendOutlookMail.Files>
+          </ui:SendOutlookMail>
+          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="354,96" sap2010:WorkflowViewState.IdRef="LogMessage_17" Level="Info" Message="[&quot;Mail sent to Malta&quot;]" />
+        </Sequence>
+      </If.Then>
+      <If.Else>
+        <Sequence sap:VirtualizedContainerService.HintSize="416,203.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_49">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="354,96" sap2010:WorkflowViewState.IdRef="LogMessage_18" Level="Info" Message="[&quot;No files to be sent to Malta&quot;]" />
+        </Sequence>
+      </If.Else>
+    </If>
+    <If Condition="[Li_PortoDL.Count&gt;0]" sap:VirtualizedContainerService.HintSize="945.333333333333,559.333333333333" sap2010:WorkflowViewState.IdRef="If_23">
+      <If.Then>
+        <Sequence sap:VirtualizedContainerService.HintSize="416,394" sap2010:WorkflowViewState.IdRef="Sequence_50">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:SendOutlookMail Bcc="{x:Null}" MailMessage="{x:Null}" ReplyTo="{x:Null}" TimeoutMS="{x:Null}" Account="cre@flutter.com" AttachmentsCollection="[Li_PortoDL]" Body="Please see attached the users that have access to extra rights doors." Cc="diogo.cruz@flutter.com" DisplayName="Send Outlook Mail Message" sap:VirtualizedContainerService.HintSize="354,150.666666666667" sap2010:WorkflowViewState.IdRef="SendOutlookMail_8" Importance="Normal" IsBodyHtml="False" IsDraft="False" Sensitivity="Normal" Subject="Porto Extra Rights Door List" To="[Mail_Porto]">
+            <ui:SendOutlookMail.Files>
+              <scg:List x:TypeArguments="InArgument(x:String)" Capacity="0" />
+            </ui:SendOutlookMail.Files>
+          </ui:SendOutlookMail>
+          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="354,96" sap2010:WorkflowViewState.IdRef="LogMessage_19" Level="Info" Message="[&quot;Mail sent to Porto&quot;]" />
+        </Sequence>
+      </If.Then>
+      <If.Else>
+        <Sequence sap:VirtualizedContainerService.HintSize="416,203.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_51">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="354,96" sap2010:WorkflowViewState.IdRef="LogMessage_20" Level="Info" Message="[&quot;No files to be sent to Porto&quot;]" />
+        </Sequence>
+      </If.Else>
+    </If>
+    <If Condition="[Li_ClujDL.Count&gt;0]" sap:VirtualizedContainerService.HintSize="945.333333333333,559.333333333333" sap2010:WorkflowViewState.IdRef="If_24">
+      <If.Then>
+        <Sequence sap:VirtualizedContainerService.HintSize="416,394" sap2010:WorkflowViewState.IdRef="Sequence_52">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:SendOutlookMail Bcc="{x:Null}" MailMessage="{x:Null}" ReplyTo="{x:Null}" TimeoutMS="{x:Null}" Account="cre@flutter.com" AttachmentsCollection="[Li_ClujDL]" Body="Please see attached the users that have access to extra rights doors." Cc="sergiu.simon@flutter.com" DisplayName="Send Outlook Mail Message" sap:VirtualizedContainerService.HintSize="354,150.666666666667" sap2010:WorkflowViewState.IdRef="SendOutlookMail_9" Importance="Normal" IsBodyHtml="False" IsDraft="False" Sensitivity="Normal" Subject="Cluj Extra Rights Door List" To="[Mail_Cluj]">
+            <ui:SendOutlookMail.Files>
+              <scg:List x:TypeArguments="InArgument(x:String)" Capacity="0" />
+            </ui:SendOutlookMail.Files>
+          </ui:SendOutlookMail>
+          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="354,96" sap2010:WorkflowViewState.IdRef="LogMessage_21" Level="Info" Message="[&quot;Mail sent to Cluj&quot;]" />
+        </Sequence>
+      </If.Then>
+      <If.Else>
+        <Sequence sap:VirtualizedContainerService.HintSize="416,203.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_53">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="354,96" sap2010:WorkflowViewState.IdRef="LogMessage_22" Level="Info" Message="[&quot;No files to be sent to Cluj&quot;]" />
+        </Sequence>
+      </If.Else>
+    </If>
+    <If Condition="[Li_LeedsDL.Count&gt;0]" sap:VirtualizedContainerService.HintSize="945.333333333333,559.333333333333" sap2010:WorkflowViewState.IdRef="If_25">
+      <If.Then>
+        <Sequence sap:VirtualizedContainerService.HintSize="416,394" sap2010:WorkflowViewState.IdRef="Sequence_54">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:SendOutlookMail Bcc="{x:Null}" MailMessage="{x:Null}" ReplyTo="{x:Null}" TimeoutMS="{x:Null}" Account="cre@flutter.com" AttachmentsCollection="[Li_LeedsDL]" Body="Please see attached the users that have access to extra rights doors." Cc="andy.sefton@skybettingandgaming.com" DisplayName="Send Outlook Mail Message" sap:VirtualizedContainerService.HintSize="354,150.666666666667" sap2010:WorkflowViewState.IdRef="SendOutlookMail_10" Importance="Normal" IsBodyHtml="False" IsDraft="False" Sensitivity="Normal" Subject="Leeds Extra Rights Door List" To="[Mail_Leeds]">
+            <ui:SendOutlookMail.Files>
+              <scg:List x:TypeArguments="InArgument(x:String)" Capacity="0" />
+            </ui:SendOutlookMail.Files>
+          </ui:SendOutlookMail>
+          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="354,96" sap2010:WorkflowViewState.IdRef="LogMessage_23" Level="Info" Message="[&quot;Mail sent to Leeds&quot;]" />
+        </Sequence>
+      </If.Then>
+      <If.Else>
+        <Sequence sap:VirtualizedContainerService.HintSize="416,203.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_55">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="354,96" sap2010:WorkflowViewState.IdRef="LogMessage_24" Level="Info" Message="[&quot;No files to be sent to Leeds&quot;]" />
+        </Sequence>
+      </If.Else>
+    </If>
+    <If Condition="[Li_LondonDL.Count&gt;0]" sap:VirtualizedContainerService.HintSize="945,549" sap2010:WorkflowViewState.IdRef="If_26">
+      <If.Then>
+        <Sequence sap:VirtualizedContainerService.HintSize="450,389" sap2010:WorkflowViewState.IdRef="Sequence_56">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:SendOutlookMail Bcc="{x:Null}" MailMessage="{x:Null}" ReplyTo="{x:Null}" TimeoutMS="{x:Null}" Account="cre@flutter.com" AttachmentsCollection="[Li_LondonDL]" Body="Please see attached the users that have access to extra rights doors." Cc="jack.sherwood@flutter.com" DisplayName="Send Outlook Mail Message" sap:VirtualizedContainerService.HintSize="388,146" sap2010:WorkflowViewState.IdRef="SendOutlookMail_11" Importance="Normal" IsBodyHtml="False" IsDraft="False" Sensitivity="Normal" Subject="London Extra Rights Door List" To="[Mail_London]">
+            <ui:SendOutlookMail.Files>
+              <scg:List x:TypeArguments="InArgument(x:String)" Capacity="0" />
+            </ui:SendOutlookMail.Files>
+          </ui:SendOutlookMail>
+          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,92" sap2010:WorkflowViewState.IdRef="LogMessage_25" Level="Info" Message="[&quot;Mail sent to London&quot;]" />
+        </Sequence>
+      </If.Then>
+      <If.Else>
+        <Sequence sap:VirtualizedContainerService.HintSize="450,203" sap2010:WorkflowViewState.IdRef="Sequence_57">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,92" sap2010:WorkflowViewState.IdRef="LogMessage_26" Level="Info" Message="[&quot;No files to be sent to London&quot;]" />
+        </Sequence>
+      </If.Else>
+    </If>
+    <If Condition="[Li_SheffieldDL.Count&gt;0]" sap:VirtualizedContainerService.HintSize="945,549" sap2010:WorkflowViewState.IdRef="If_27">
+      <If.Then>
+        <Sequence sap:VirtualizedContainerService.HintSize="450,389" sap2010:WorkflowViewState.IdRef="Sequence_58">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:SendOutlookMail Bcc="{x:Null}" Cc="{x:Null}" MailMessage="{x:Null}" ReplyTo="{x:Null}" TimeoutMS="{x:Null}" Account="cre@flutter.com" AttachmentsCollection="[Li_SheffieldDL]" Body="Please see attached the users that have access to extra rights doors." DisplayName="Send Outlook Mail Message" sap:VirtualizedContainerService.HintSize="388,146" sap2010:WorkflowViewState.IdRef="SendOutlookMail_12" Importance="Normal" IsBodyHtml="False" IsDraft="False" Sensitivity="Normal" Subject="Sheffield Extra Rights Door List" To="[Mail_Sheffield]">
+            <ui:SendOutlookMail.Files>
+              <scg:List x:TypeArguments="InArgument(x:String)" Capacity="0" />
+            </ui:SendOutlookMail.Files>
+          </ui:SendOutlookMail>
+          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,92" sap2010:WorkflowViewState.IdRef="LogMessage_27" Level="Info" Message="[&quot;Mail sent to Sheffield&quot;]" />
+        </Sequence>
+      </If.Then>
+      <If.Else>
+        <Sequence sap:VirtualizedContainerService.HintSize="450,203" sap2010:WorkflowViewState.IdRef="Sequence_59">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,92" sap2010:WorkflowViewState.IdRef="LogMessage_28" Level="Info" Message="[&quot;No files to be sent to Sheffield&quot;]" />
+        </Sequence>
+      </If.Else>
+    </If>
+    <If Condition="[Li_SolihulDL.Count&gt;0]" sap:VirtualizedContainerService.HintSize="945.333333333333,555.333333333333" sap2010:WorkflowViewState.IdRef="If_28">
+      <If.Then>
+        <Sequence sap:VirtualizedContainerService.HintSize="450,390" sap2010:WorkflowViewState.IdRef="Sequence_60">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:SendOutlookMail Bcc="{x:Null}" Cc="{x:Null}" MailMessage="{x:Null}" ReplyTo="{x:Null}" TimeoutMS="{x:Null}" Account="cre@flutter.com" AttachmentsCollection="[Li_SolihulDL]" Body="Please see attached the users that have access to extra rights doors." DisplayName="Send Outlook Mail Message" sap:VirtualizedContainerService.HintSize="388,150.666666666667" sap2010:WorkflowViewState.IdRef="SendOutlookMail_13" Importance="Normal" IsBodyHtml="False" IsDraft="False" Sensitivity="Normal" Subject="Solihull Extra Rights Door List" To="[Mail_Sheffield]">
+            <ui:SendOutlookMail.Files>
+              <scg:List x:TypeArguments="InArgument(x:String)" Capacity="0" />
+            </ui:SendOutlookMail.Files>
+          </ui:SendOutlookMail>
+          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,92" sap2010:WorkflowViewState.IdRef="LogMessage_29" Level="Info" Message="[&quot;Mail sent to Solihull&quot;]" />
+        </Sequence>
+      </If.Then>
+      <If.Else>
+        <Sequence sap:VirtualizedContainerService.HintSize="416,203.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_61">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="354,96" sap2010:WorkflowViewState.IdRef="LogMessage_30" Level="Info" Message="[&quot;No files to be sent to Solihull&quot;]" />
+        </Sequence>
+      </If.Else>
+    </If>
+    <ui:SendOutlookMail Bcc="{x:Null}" Cc="{x:Null}" MailMessage="{x:Null}" ReplyTo="{x:Null}" TimeoutMS="{x:Null}" Account="cre@flutter.com" AttachmentsCollection="[Li_CommsDCUKI]" Body="Please see attached the users that have access to UK&amp;I Comms and DC doors." DisplayName="Send Outlook Mail Message" sap:VirtualizedContainerService.HintSize="945.333333333333,150.666666666667" sap2010:WorkflowViewState.IdRef="SendOutlookMail_14" Importance="Normal" IsBodyHtml="False" IsDraft="False" Sensitivity="Normal" Subject="ACT Comms and DC doors access rights" To="Neil.Maguire@ppb.com">
+      <ui:SendOutlookMail.Files>
+        <scg:List x:TypeArguments="InArgument(x:String)" Capacity="0" />
+      </ui:SendOutlookMail.Files>
+    </ui:SendOutlookMail>
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="945.333333333333,96" sap2010:WorkflowViewState.IdRef="LogMessage_31" Level="Info" Message="[&quot;All emails delivered&quot;]" />
+  </Sequence>
+</Activity>
